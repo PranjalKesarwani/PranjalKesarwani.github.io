@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+#heading {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#container {
+    margin: 0 50px;
+    /* border: 1px solid black; */
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+   
+
+}
+
+.box {
+    border: 1px solid black;
+    position: relative;
+    width: 30%;
+    height: 38vh;
+   
+    position: relative;
+    background-color: burlywood;
+    min-width: 250px;
+
+}
+
+
+
+.title {
+
+    border: 1px solid black;
+    background-color: aquamarine;
+    /* text-align: end; */
+    width: 25%;
+    right: 0;
+    position: absolute;
+
+    /* padding: 10px 20px 10px 0px; */
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2vw;
+
+}
+
+#name1 {
+    color: black;
+}
+
+#name2 {
+    color: white;
+    background-color: red;
+}
+
+#name1 {
+    color: black;
+}
+
+
+.paraBox {
+
+    line-height: 25px;
+    padding: 15px;
+
+    margin-top: 32px;
+}
+
+
+@media (max-width: 768px) {
+    #container{
+        flex-wrap: wrap;
+        
+    }
+    .box{
+        min-width: 300px;
+        margin-top: 30px;
+        width: 48%;
+     
+    }
+    #specialBox{
+        width: 100%;
+    }
+    .title {
+        
+        font-size: 2.2vw;
+    }
+   
+}
+@media (max-width: 380px){
+    #container {
+        margin: 0 25px;
+       
+    }
+    .box {
+        
+        margin-top: 30px;
+        width: 100%;
+        height: 42vh;
+    }
+    .title {
+        font-size: 4.2vw;
+    }
+}
